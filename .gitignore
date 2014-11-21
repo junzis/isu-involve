@@ -1,0 +1,43 @@
+# User specific & automatically generated files #
+#################################################
+/app/Config/core.php
+/app/Config/database.php
+/app/Config/email.php
+/app/tmp
+/lib
+/plugins
+/vendors
+/build
+/dist
+/tags
+*.mo
+
+/app/Plugin/*
+!/app/Plugin/empty
+
+/app/Vendor/*
+!/app/Vendor/empty
+
+/app/webroot/user_cvs/*
+!/app/webroot/user_cvs/empty
+
+/app/webroot/db_backups/*
+!/app/webroot/db_backups/empty
+
+
+# IDE and editor specific files #
+#################################
+/nbproject
+.idea
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+

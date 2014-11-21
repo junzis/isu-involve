@@ -1,0 +1,105 @@
+body{
+    padding-top: 60px;
+}
+
+.navbar-fixed-top {
+    -webkit-transform: translateZ(0);   /* fix chrome slow problem */
+}
+
+#content{
+    padding-top: 20px;
+    min-height: 700px;
+}
+
+#footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 1px #aaa dashed;
+}
+
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(1.2); /* IE */
+  -moz-transform: scale(1.2); /* FF */
+  -webkit-transform: scale(1.2); /* Safari and Chrome */
+  -o-transform: scale(1.2); /* Opera */
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.required label:after{
+    content: " *"
+}
+
+pre.info{
+    width: 100px;
+}
+
+fieldset.important legend{
+    background-color: #F6F4C2;
+}
+
+form .help-inline {
+    background: #F6F4C2;
+    padding: 0 5px;
+    margin: 2px 0;
+}
+
+form .input.file{
+    border: 2px dashed #888;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+table.table-sm-font{
+    font-size: 85%;
+}
+
+.well hr {
+    border-color: #ddd;
+}
+
+.small-badge{
+    background-color: #ddd;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.small-badge.green{
+    background-color: #729E51;
+    color: #FFF;
+}
+
+.small-badge.red{
+    background-color: #852727;
+    color: #FFF;
+}
+
+.expandbox{
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border: 1px #ddd solid;
+}
+
+.description-wrapper{
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: 90%;
+}
+
+.desc-toggle {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2ba6cb;
+    padding: 2px 4px;
+    border: 1px dashed #ccc;
+    background: #fff;
+    cursor: pointer;
+}
