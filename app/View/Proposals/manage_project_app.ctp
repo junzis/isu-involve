@@ -1,8 +1,8 @@
 <div class="well">
      <?php
-          echo $this->Html->link('Print / PDF', 
+          echo $this->Html->link('<span class="glyphicon glyphicon-print"></span> Print | <span class="glyphicon glyphicon-file"></span> PDF', 
                array('controller'=>'proposals', 'action'=>'print_project_app', $app['ProjectApp']['id']), 
-               array('target'=>'_blank', 'class'=>'btn btn-primary pull-right')
+               array('target'=>'_blank', 'class'=>'btn btn-info pull-right', 'escape'=>false)
           );
      ?>
      <?php echo $this->Form->create('ProjectApp', array('url'=>array('controller'=>'proposals', 'action'=>'update_project_uid'), 'class'=>'form-inline', 'role'=>'form', 'type'=>'post')); ?>
