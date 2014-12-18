@@ -28,29 +28,29 @@
 
      <hr/>
 
-     <h5>Project Title: </h5>
+     <h4>Project Title: </h4>
      <?php echo $app['ProjectApp']['title'] ?>
 
      
-     <h5>Proposed ISU program:</h5>
+     <h4>Proposed ISU program:</h4>
      <?php echo nl2br($app['ProjectApp']['program']) ?>
 
-     <h5>One-paragraph description:</h5>
+     <h4>One-paragraph description:</h4>
      <?php echo nl2br($app['ProjectApp']['description']) ?>
      
-     <h5>Background rationale:</h5>
+     <h4>Background rationale:</h4>
      <?php echo nl2br($app['ProjectApp']['background']) ?>
 
-     <h5>Main issue(s) to be addressed:</h5>
+     <h4>Main issue(s) to be addressed:</h4>
      <?php echo nl2br($app['ProjectApp']['issues']) ?>
 
-     <h5>Main tasks to be accomplished:</h5>
+     <h4>Main tasks to be accomplished:</h4>
      <?php echo nl2br($app['ProjectApp']['tasks']) ?>
 
-     <h5>International / Interculture scope of the project:</h5>
+     <h4>International / Interculture scope of the project:</h4>
      <?php echo nl2br($app['ProjectApp']['scope_2i']) ?>
 
-     <h5>Interdisciplinary Scope - Expected level of involvement of by disciplines:</h5>
+     <h4>Interdisciplinary Scope - Expected level of involvement of by disciplines:</h4>
      <table class="table table-bordered table-condensed table-bordered">
           <tr>
                <td nowrap width="30%">Space Applications</td>
@@ -83,8 +83,8 @@
      </table>
      
 
-     <h5>Brief explanation of expected involvement of by disciplines:</h5>
-     <table class="table table-bordered table-condensed table-bordered">
+     <h4>Brief explanation of expected involvement of by disciplines:</h4>
+     <table class="table table-bordered table-condensed">
           <tr>
                <td nowrap width="30%">Space Applications</td>
                <td><?php echo nl2br($app['ProjectApp']['area_app']) ?></td>
@@ -115,16 +115,16 @@
           </tr>
      </table>
 
-     <h5>Window of opportunity in terms of potential relevance of and interest in the project topic:</h5>
+     <h4>Window of opportunity in terms of potential relevance of and interest in the project topic:</h4>
      <?php echo nl2br($app['ProjectApp']['opportunity_window']) ?>
 
-     <h5>Potential external interest in or sponsorship of the TP topic:</h5>
+     <h4>Potential external interest in or sponsorship of the TP topic:</h4>
      <?php echo nl2br($app['ProjectApp']['potential_sponsorship']) ?>
 
-     <h5>Prospective impact of the TP:</h5>
+     <h4>Prospective impact of the TP:</h4>
      <?php echo nl2br($app['ProjectApp']['prospective_impact']) ?>
 
-     <h5>Additional comments:</h5>
+     <h4>Additional comments:</h4>
      <?php echo nl2br($app['ProjectApp']['comments']) ?>
      
  </div>

@@ -16,7 +16,13 @@
     <?php foreach($theme_day_apps as $app): ?>
         <?php $id = $app['User']['id']; $appid = $app['ThemeDayApp']['id']; ?>        
         <tr>
-            <td><?php echo $app['User']['first_name'].' '.$app['User']['last_name']; ?></td>
+            <td>
+                <?php
+                    echo $this->Js->link($app['User']['name'], 
+                        array('controller'=>'users', 'action'=>'user_view_backend',  $id), 
+                        array('update'=>'#user-container', 'complete'=>'$("#userModal").modal("show");')
+                );?>
+            </td>
             <td>
                 <?php echo $app['ThemeDayApp']['title'] ?>
                 <span class="desc-toggle" id="toggle-<?php echo $appid?>">Show / Hide details</span>
@@ -29,12 +35,6 @@
                         $("#description-<?php echo $appid?>").slideToggle();
                     });
                 </script>
-            </td>
-            <td align="right" nowrap>
-                <?php echo $this->Js->link('View User', 
-                        array('controller'=>'users', 'action'=>'user_view_backend',  $id), 
-                        array('update'=>'#user-container', 'class'=>'btn btn-xs btn-info', 'complete'=>'$("#userModal").modal("show");')
-                );?>
             </td>
         </tr>
     <?php endforeach; ?>

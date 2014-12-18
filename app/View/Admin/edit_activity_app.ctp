@@ -61,7 +61,7 @@
         )); ?>
         <?php
             echo $this->Html->link('Cancel', 
-                array('controller'=>'admin', 'action'=>'activity_apps'),
+                array('controller'=>'proposals', 'action'=>'activity_apps'),
                 array('class'=>'btn btn-warning')
             );
         ?>

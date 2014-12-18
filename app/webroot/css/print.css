@@ -1,7 +1,11 @@
 body{
-  font-size: 15px;
+  font-size: 13px;
 }
 
 #content{
   margin: auto 20px;
+}
+
+h4, h5 {
+    font-weight: bold;
 }

@@ -37,7 +37,6 @@
             <th width="20%">Name</th>
             <th>Activity</th>
             <th>Year</th>
-            <th width="5%"></th>
         </tr>
     </thead>
 
@@ -45,7 +44,13 @@
         <?php $id = $app['User']['id']; $appid = $app['ActivityApp']['id']; ?>
         
                 <tr>
-                    <td><?php echo $app['User']['first_name'].' '.$app['User']['last_name']; ?></td>
+                    <td>
+                        <?php
+                            echo $this->Js->link($app['User']['name'],
+                                array('controller'=>'users', 'action'=>'user_view_backend',  $id), 
+                                array('update'=>'#user-container', 'complete'=>'$("#userModal").modal("show");')
+                        );?>
+                    </td>
                     <td>
                         <?php echo $app['ActivityApp']['title'] ?>
 
@@ -85,12 +90,6 @@
 
                     </td>
                     <td><?php echo $app['ActivityApp']['year'] ?></td>
-                    <td nowrap>
-                        <?php echo $this->Js->link('View User', 
-                                array('controller'=>'users', 'action'=>'user_view_backend',  $id), 
-                                array('update'=>'#user-container', 'class'=>'btn btn-xs btn-info', 'complete'=>'$("#userModal").modal("show");')
-                        );?>
-                    </td>
                 </tr>
 
 

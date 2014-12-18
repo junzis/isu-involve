@@ -31,6 +31,11 @@ You need to create the following configuration file from the default examples in
     /app/Config/database.php
     /app/Config/email.php
 
+### Step 4:
+
+Make sure the `/app/tmp` folder is writable by the webserve user (e.g. `www-data` in Ubuntu).
+
+
 ## License
 
 The MIT License (MIT)

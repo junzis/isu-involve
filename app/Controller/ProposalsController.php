@@ -16,7 +16,7 @@ class ProposalsController extends AppController {
 
         'ProjectApp' => array(
             'limit' => 30, 
-            'order' => array('User.first_name'=>'asc'),
+            'order' => array('ProjectApp.created'=>'desc'),
         ),
 
     );

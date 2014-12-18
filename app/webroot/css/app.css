@@ -2,6 +2,10 @@ body{
     padding-top: 60px;
 }
 
+h4, h5 {
+    font-weight: bold;
+}
+
 .navbar-fixed-top {
     -webkit-transform: translateZ(0);   /* fix chrome slow problem */
 }
@@ -62,6 +66,10 @@ table.table-sm-font{
     border-color: #ddd;
 }
 
+.well table,
+.well table tr td {
+    border-color: #ccc;
+}
 .small-badge{
     background-color: #ddd;
     font-size: 10px;
@@ -102,4 +110,6 @@ table.table-sm-font{
     border: 1px dashed #ccc;
     background: #fff;
     cursor: pointer;
+    display: inline-block;
+    margin-left: 5px;
 }
